@@ -20,8 +20,6 @@ public class ArrayMain {
 
     }
 
-
-
     public  static boolean testBuyAndSellStock(){
         int[] input = new int[5];
         for(int i =0; i< 5; i++){
@@ -53,7 +51,24 @@ public class ArrayMain {
 
     }
 
+    public  static boolean testProductExceptSelf(){
+        int[] input = new int[4];
+        for(int i =0; i< 4; i++){
+            input[i] = i+1;
+        }
+        ProductExceptSelf t1 = new ProductExceptSelf(input);
+        int[] res = {24, 12,8, 6};
 
+        for(int i =0; i<t1.result.length ; i++){
+            if(res[i] != t1.result[i]){
+                return false;
+            }
+
+        }
+        return true;
+    }
+
+    
 
 
     public static void main(String[] args){
@@ -63,5 +78,7 @@ public class ArrayMain {
         System.out.println("Sl No:"+count+ "  Running Buy and Sell Stock  Test: "+ testBuyAndSellStock());
         count++;
         System.out.println("Sl No:"+count+ "  Running Contains Duplicate  Test: "+ testContainsDuplicate());
+        count++;
+        System.out.println("Sl No:"+count+ "  Running Product ExceptSelf  Test: "+ testProductExceptSelf());
     }
 }

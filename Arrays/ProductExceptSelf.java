@@ -17,16 +17,17 @@ public class ProductExceptSelf {
         for(int i=0; i< input.length-1; i++){
             l[i+1] = l[i]*input[i]; 
         }
-        for(int i=input.length-2; i >=0; i--){
-            l[i-1] = l[i]*input[i]; 
+        for(int i=input.length-1; i >0; i--){
+            //System.out.println("Right: "+input[i]);
+            r[i-1] = r[i]*input[i]; 
         }
 
         int[] result = new int[input.length];
         for(int i=0; i <input.length; i++){
-             result[i] = l[i]*r[i];
+            // System.out.println("Left: "+l[i]);
+            // System.out.println("Right: "+r[i]);
+            result[i] = l[i]*r[i];
         }
-
-
 
         return result;
     }
