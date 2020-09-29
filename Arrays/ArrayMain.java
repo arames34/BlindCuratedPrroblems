@@ -99,6 +99,20 @@ public class ArrayMain {
     }
 
 
+    public  static boolean testRotatedSortedArray(){
+        int[] input = {8,4,6,7};
+        RotatedSortedArray t1 = new RotatedSortedArray(input);
+        int res = 4;
+        if(res != t1.result){
+           return false;
+        }
+        else{
+            return true;            
+        }    
+    }
+
+
+
 
     public static void main(String[] args){
         int count =1;
@@ -113,5 +127,7 @@ public class ArrayMain {
         System.out.println("Sl No:"+count+ "  Running Max SubArray Sum  Test: "+ testMaxSubArraySum());
         count++;
         System.out.println("Sl No:"+count+ "  Running Max SubArray Product  Test: "+ testMaxSubArrayProduct());
+        count++;
+        System.out.println("Sl No:"+count+ "  Running Rotated Sorted Array  Test: "+ testRotatedSortedArray());
     }
 }
