@@ -112,6 +112,17 @@ public class ArrayMain {
     }
 
 
+    public  static boolean testContainerWithMostWater(){
+        int[] input = {1,8,6,2,5,4,8,3,7};
+        ContainerWithMostWater t1 = new ContainerWithMostWater(input);
+        int res = 49;
+        if(res != t1.result){
+           return false;
+        }
+        else{
+            return true;            
+        }    
+    }
 
 
     public static void main(String[] args){
@@ -129,5 +140,7 @@ public class ArrayMain {
         System.out.println("Sl No:"+count+ "  Running Max SubArray Product  Test: "+ testMaxSubArrayProduct());
         count++;
         System.out.println("Sl No:"+count+ "  Running Rotated Sorted Array  Test: "+ testRotatedSortedArray());
+        count++;
+        System.out.println("Sl No:"+count+ "  Running Container With Most Water  Test: "+ testContainerWithMostWater());
     }
 }
