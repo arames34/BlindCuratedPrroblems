@@ -69,10 +69,27 @@ public class ArrayMain {
     }
 
     
+    public  static boolean testMaxSubArray(){
+        int[] input = {-2,1,-3,4,-1,2,1,-5,4};
+        
+        MaxSubArray t1 = new MaxSubArray(input);
+        int res = 6;
+
+            if(res != t1.result){
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+    }
+
+
+
 
 
     public static void main(String[] args){
-        int count =0;
+        int count =1;
         System.out.println("Sl No:"+count+ "  Running Two Sum  Test: "+ testTwoSum());
         count++;
         System.out.println("Sl No:"+count+ "  Running Buy and Sell Stock  Test: "+ testBuyAndSellStock());
@@ -80,5 +97,7 @@ public class ArrayMain {
         System.out.println("Sl No:"+count+ "  Running Contains Duplicate  Test: "+ testContainsDuplicate());
         count++;
         System.out.println("Sl No:"+count+ "  Running Product ExceptSelf  Test: "+ testProductExceptSelf());
+        count++;
+        System.out.println("Sl No:"+count+ "  Running Max SubArray Sum  Test: "+ testMaxSubArray());
     }
 }
