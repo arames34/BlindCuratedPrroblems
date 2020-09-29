@@ -52,12 +52,13 @@ public class SumOfTwoIntegers {
 
 
     int runSumOfTwoIntegers(){
-        int count =0;
+        //int count =0;
 
         while (b != 0)  
-        {   System.out.println("Round"+ count);
-            printBinary(a);
-            printBinary(b);
+        {   
+            // System.out.println("Round"+ count);
+            // printBinary(a);
+            // printBinary(b);
             // carry now contains common  
             //set bits of x and y 
             int carry = a & b;  // This will have the carry bits
@@ -69,7 +70,7 @@ public class SumOfTwoIntegers {
             // Carry is shifted by one so that adding 
             // it to x gives the required sum 
             b = carry << 1; 
-            count++;
+          //  count++;
         } 
         return a; 
    }
