@@ -38,6 +38,21 @@ public class ArrayMain {
     }
 
 
+    public  static boolean testContainsDuplicate(){
+        int[] input = new int[5];
+        for(int i =0; i< 5; i++){
+            input[i] = i+3;
+        }
+        ContainsDuplicate t1 = new ContainsDuplicate(input);
+        if(t1.result == false){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+
 
 
 
@@ -46,6 +61,7 @@ public class ArrayMain {
         System.out.println("Sl No:"+count+ "  Running Two Sum  Test: "+ testTwoSum());
         count++;
         System.out.println("Sl No:"+count+ "  Running Buy and Sell Stock  Test: "+ testBuyAndSellStock());
-                        
+        count++;
+        System.out.println("Sl No:"+count+ "  Running Contains Duplicate  Test: "+ testContainsDuplicate());
     }
 }
