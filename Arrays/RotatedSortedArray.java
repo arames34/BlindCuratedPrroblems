@@ -9,7 +9,6 @@ public class RotatedSortedArray {
         this.input = input;
         int low =0;
         int high = input.length-1;
-        int mid = (low+high)/2;
         this.result = runRotatedSortedArray(low, high);
     }
 
