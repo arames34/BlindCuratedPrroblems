@@ -47,8 +47,15 @@ public class TreesMain {
             TreeNode root = new TreeNode(randomInt);
             TreeNode curr = root;
             int count = number-1;
+            boolean left = randomInt%2 == 0;
+            int tooManyLefts = 0; 
             while(count !=0){
-                boolean left = randomInt%2 == 0;
+                
+
+                if(tooManyLefts==2){
+                    left = false;
+                    tooManyLefts =0;
+                }
                 if(left){
                     curr.left = new TreeNode(rand.nextInt(100));
                     
@@ -63,19 +70,35 @@ public class TreesMain {
                         curr = curr.left;
                     }
                     else{
-                        curr.left = new TreeNode(rand.nextInt(30));
+                        left = rand.nextInt(100)%2 ==0;
+                        if(left){
+                            curr.left = new TreeNode(rand.nextInt(30));
                         curr = curr.left;
+                        }        
+                        else{
+                            curr = curr.right;
+                        }
+                        
                     }
                 }
                 else{
-
+                    left = rand.nextInt(100)%2 ==0;
                     if(curr.right != null){
                         curr = curr.right;
                     }
                     else{
-                        curr.right = new TreeNode(rand.nextInt(30));
-                        curr = curr.right;
+                        if(left){
+                            curr.right = new TreeNode(rand.nextInt(30));
+                            curr = curr.right;
+                        }
+                        else{
+                            curr = curr.left;
+                        }
+                        
                     }
+                }
+                if(left){
+                    tooManyLefts +=1;
                 }
                 count--;
             }
