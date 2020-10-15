@@ -105,6 +105,16 @@ public class TreesMain {
             TreesMain t1 = new TreesMain();
             TreeNode root = t1.createRandomTree(5);
             TreePrinter.print(root);
+            // Serializing the tree
+            System.out.println("Serialized result");
+            System.out.println(Serialize.runSerialize(root));
+            
+            //Deserializing the tree
+            TreeNode newTree = Deserialize.deserialize(Serialize.runSerialize(root));
+            TreePrinter.print(newTree);
+
+            
+
         }
     
 
