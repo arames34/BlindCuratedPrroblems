@@ -13,6 +13,8 @@ package Trees;
                             NOTE: Order same when u serialized.(Tree structure confirms that)
 
         To make sure you understand, printed out the tree! Everytime it generates random tree... do check out the code. 
+
+        No idea about what i am talking? Source of all the shit :P https://www.youtube.com/watch?v=suj1ro8TIVY
 */
 
 public class Serialize {
