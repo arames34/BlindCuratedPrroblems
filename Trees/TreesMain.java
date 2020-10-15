@@ -32,11 +32,6 @@ class TreeNode implements PrintableNode{
 } 
 
 
-
-
-
-
-
 public class TreesMain {
   
         TreeNode createRandomTree(int number){
