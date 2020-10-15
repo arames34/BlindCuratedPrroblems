@@ -1,5 +1,4 @@
 package Trees;
-
 // Breaking down the idea!!   Beautiful problem if done in Java :P
 /*
         1) Store the tree as a pre-order traversal string.  Root->Left->Right
@@ -7,25 +6,19 @@ package Trees;
         3) After that, start building the tree. How?
             1) Poll the front of the queue.
                 2) If null return null
-                3) If element is present
+                3) If element is present(Tha is, if its not null):
                         a) create a new node initialized with this value.
-                        b) attach left subtree by calling the function recursively
-                        c) attach right subtree by calling the function recursively
-                            NOTE: Order same when u serialized.
+                        b) attach left subtree by calling the function recursively[PS-> Queue passed by reference]
+                        c) attach right subtree by calling the function recursively[PS-> Queue passed by reference]
+                            NOTE: Order same when u serialized.(Tree structure confirms that)
 
         To make sure you understand, printed out the tree! Everytime it generates random tree... do check out the code. 
-
-
 */
-
-
-
-
-
 
 public class Serialize {
 
     public static String runSerialize(TreeNode root){
+        // Pre-order is the order to go!
         if(root == null){
             return "n ";
         }
