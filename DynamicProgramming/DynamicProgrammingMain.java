@@ -1,6 +1,5 @@
 package DynamicProgramming;
 
-import javax.naming.spi.DirStateFactory.Result;
 
 public class DynamicProgrammingMain {
     public static boolean testClimbingStairs(){
