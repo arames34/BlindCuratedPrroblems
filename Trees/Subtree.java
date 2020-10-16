@@ -21,7 +21,7 @@ public class Subtree {
         root.right = new TreeNode(5);
         root.left.left = new TreeNode(1);
         root.left.right = new TreeNode(2);
-        root.left.right.left = new TreeNode(0);
+       // root.left.right.left = new TreeNode(0);
         return root;
     }
 
@@ -37,8 +37,8 @@ public class Subtree {
         String tree1 = preOrder(S, true);
         String tree2 = preOrder(T, true);
 
-        // System.out.println("Tree1: "+tree1);
-        // System.out.println("Tree2: "+tree2);
+         System.out.println("Tree1: "+tree1);
+         System.out.println("Tree2: "+tree2);
         return tree1.indexOf(tree2) >= 0;
     }
 

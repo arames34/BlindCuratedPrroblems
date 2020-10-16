@@ -134,7 +134,7 @@ public class TreesMain {
         {
             System.out.println("Uncomment to run tests");
             // runSerializationDeserializationTest(); 
-            // runSubtreeTest();
+             runSubtreeTest();
 
         }
     
