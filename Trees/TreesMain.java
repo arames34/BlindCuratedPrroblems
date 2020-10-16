@@ -134,8 +134,17 @@ public class TreesMain {
         {
             System.out.println("Uncomment to run tests");
             // runSerializationDeserializationTest(); 
-             runSubtreeTest();
+             //runSubtreeTest();
 
+             int[] testArray = {1, 5, 6, 2, 4, 3, 11 ,9,8};
+             TreeNode root = lowestCommonAncestor.createBST(testArray);
+             TreePrinter.print(root);
+
+             TreeNode p = new TreeNode(3);
+             TreeNode q = new TreeNode(8);
+
+             System.out.println("The value of the Ancestor is :"+lowestCommonAncestor.runlowestCommonAncestor(root, p, q).value);
+             
         }
     
 
