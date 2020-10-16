@@ -126,14 +126,15 @@ public class TreesMain {
             TreePrinter.print(S);
             System.out.println();
             TreePrinter.print(T);
-            
+
             System.out.println("Result: "+Subtree.runSubTree(S, T));
         }
 
         public static void main(String[] args) 
         {
-            runSerializationDeserializationTest(); 
-            runSubtreeTest();
+            System.out.println("Uncomment to run tests");
+            // runSerializationDeserializationTest(); 
+            // runSubtreeTest();
 
         }
     
