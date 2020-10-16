@@ -12,6 +12,11 @@ public class Deserialize {
                 nodes.add(s);
             }
         }
+        System.out.println("Nodes in the Queue:");
+        for(String i:nodes){
+            System.out.print(" "+i);
+        }
+        System.out.println();
          return buildTree(nodes);
     }
     

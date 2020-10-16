@@ -2,6 +2,7 @@ package Trees;
 // Breaking down the idea!!   Beautiful problem if done in Java :P
 /*
         1) Store the tree as a pre-order traversal string.  Root->Left->Right
+        
         2) During deserialization-> Remember to remove all the stop words and convert the string to a queue
         3) After that, start building the tree. How?
             1) Poll the front of the queue.

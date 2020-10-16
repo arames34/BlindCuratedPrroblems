@@ -100,8 +100,10 @@ public class TreesMain {
             return root;
         }
 
-        public static void main(String[] args) 
-        {
+
+
+        public static void runSerializationDeserializationTest(){
+            System.out.println("************STARTS**************************************************************************************************");
             TreesMain t1 = new TreesMain();
             TreeNode root = t1.createRandomTree(5);
             TreePrinter.print(root);
@@ -112,8 +114,26 @@ public class TreesMain {
             //Deserializing the tree
             TreeNode newTree = Deserialize.deserialize(Serialize.runSerialize(root));
             TreePrinter.print(newTree);
+            System.out.println("************END**************************************************************************************************");
+            System.out.println();
+            System.out.println();
+        }
 
+
+        public static void runSubtreeTest(){
+            TreeNode S = Subtree.createTreeS();
+            TreeNode T = Subtree.createTreeT();
+            TreePrinter.print(S);
+            System.out.println();
+            TreePrinter.print(T);
             
+            System.out.println("Result: "+Subtree.runSubTree(S, T));
+        }
+
+        public static void main(String[] args) 
+        {
+            runSerializationDeserializationTest(); 
+            runSubtreeTest();
 
         }
     
