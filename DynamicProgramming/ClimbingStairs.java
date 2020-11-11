@@ -2,6 +2,19 @@ package DynamicProgramming;
 
 public class ClimbingStairs {
 
+    // N IS AN INTEGER
+        // 0-266666
+
+
+
+    /*
+    
+        
+    
+    
+    
+    */
+
     int n;
     int result;
 
